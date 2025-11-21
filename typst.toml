@@ -7,5 +7,5 @@ license = "MIT"
 description = "University of Cambridge theme for Polylux"
 categories = ["layout", "presentation"]
 disciplines = ["education"]
-exclude = ["fonts/*", ".devcontainer/*", ".zed/*"]
+exclude = ["fonts/*", ".devcontainer/*", ".zed/*", "example/*"]
 compiler = "0.14.0"
