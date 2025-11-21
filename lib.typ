@@ -8,10 +8,7 @@
 #let camSlate2 = rgb(181, 189, 200)
 #let camSlate3 = rgb(84, 96, 114)
 #let camSlate4 = rgb(35, 40, 48)
-#let camLogo = image("logo/ucam-logo-colour-preferred.svg")
-
-
-
+#let camLogo = image("assets/cam-logo-colour-preferred.svg")
 
 #let titleSlide(body) = {
   set page(margin: 0pt)
@@ -20,7 +17,7 @@
     block(below: 1.5em, it)
   }
 
-  grid(
+  rawSlide(grid(
     columns: (40%, 60%),
     rows: 100%,
     gutter: 0pt,
@@ -28,7 +25,7 @@
     rect(
       width: 100%,
       height: 100%,
-      fill: white,
+      fill: none,
       stroke: none,
       inset: (left: 1.5em, top: 1.5em, right: 1.5em, bottom: 1.5em),
       align(left + top)[
@@ -77,7 +74,53 @@
         },
       ),
     ),
+  ))
+}
+
+#let alternativeSlide1(body) = {
+  let conclusionBackground = image("assets/alt_background_1.png", width: 100%, height: 100%, fit: "cover")
+
+  set page(
+    background: conclusionBackground,
+    margin: (bottom: 2em, top: 4em, rest: 1.5em),
+    header: block(
+      inset: (left: -1.5em, right: -1.5em, rest: 0em),
+      box(
+        width: 60%,
+        height: 100%,
+        clip: true,
+        fill: none,
+        {
+          place(left + horizon, dx: 1cm, image(camLogo.source, height: 1cm))
+        },
+      ),
+    ),
   )
+
+  rawSlide(body)
+}
+
+#let alternativeSlide2(body) = {
+  let conclusionBackground = image("assets/alt_background_2.png", width: 100%, height: 100%, fit: "cover")
+
+  set page(
+    background: conclusionBackground,
+    margin: (bottom: 2em, top: 4em, rest: 1.5em),
+    header: block(
+      inset: (left: -1.5em, right: -1.5em, rest: 0em),
+      box(
+        width: 60%,
+        height: 100%,
+        clip: true,
+        fill: none,
+        {
+          place(left + horizon, dx: 1cm, image(camLogo.source, height: 1cm))
+        },
+      ),
+    ),
+  )
+
+  rawSlide(body)
 }
 
 #let lightSlide(body) = {
@@ -152,6 +195,10 @@
     standardSlide(body)
   } else if type == "light" {
     lightSlide(body)
+  } else if type == "alt1" {
+    alternativeSlide1(body)
+  } else if type == "alt2" {
+    alternativeSlide2(body)
   }
 }
 
