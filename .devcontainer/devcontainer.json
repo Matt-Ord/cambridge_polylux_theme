@@ -13,12 +13,12 @@
                 "editor.formatOnSave": true,
                 "editor.codeActionsOnSave": {
                     "source.fixAll": "always"
-                },
+                }
             },
             "extensions": [
                 "myriad-dreamin.tinymist"
             ]
         }
     },
-    "onCreateCommand": "sudo apt-get update && sudo apt-get install fontconfig pkg-config -y && cargo install --locked typst-cli && sudo mkdir -p /usr/share/fonts/custom && sudo cp fonts/* /usr/share/fonts/custom/ && sudo fc-cache -fv"
+    "onCreateCommand": "sudo apt-get update && sudo apt-get install fontconfig pkg-config -y && cargo install --locked typst-cli && cargo install typship && sudo mkdir -p /usr/share/fonts/custom && sudo cp fonts/* /usr/share/fonts/custom/ && sudo fc-cache -fv"
 }
