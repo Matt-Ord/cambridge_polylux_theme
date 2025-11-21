@@ -3,7 +3,7 @@
 This is a custom theme for [Polylux](https://typst.app/universe/package/polylux/), 
 designed to match the branding and style guidelines of the University of Cambridge.
 
-![Cambridge Theme Preview](./example/main.svg)
+![Cambridge Theme Preview](https://raw.githubusercontent.com/Matt-Ord/cambridge_polylux_theme/refs/heads/main/example/main.svg)
 
 ## Required Fonts
 To use this theme, you need to have the following fonts installed on your system:
