@@ -141,6 +141,7 @@
 
 #let slide(type: "standard", body) = {
   set text(size: 2em, font: "Open Sans", fill: camSlate4)
+  set page(fill: camSlate1)
   show heading: it => {
     block(below: 1em, it)
   }
