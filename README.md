@@ -9,7 +9,7 @@ designed to match the branding and style guidelines of the University of Cambrid
 To use this theme, you need to have the following fonts installed on your system:
 - Feijoa Sans
 - Open Sans For the body
-These fonts can be downloaded from the github repository [here](https://github.com/Matt-Ord/cambridge_polylux_theme).
+These fonts can be downloaded from the github repository [here](https://github.com/Matt-Ord/cambridge_polylux_theme/tree/main/fonts).
 
 ## Updating the Example
 To update the example document with the latest changes to the theme, run the following command in your terminal:

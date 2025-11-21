@@ -20,5 +20,5 @@
             ]
         }
     },
-    "onCreateCommand": "sudo apt-get update && sudo apt-get install fontconfig pkg-config -y && cargo install --locked typst-cli && mkdir -p /usr/share/fonts/custom && cp fonts/* /usr/share/fonts/custom/ && fc-cache -fv"
+    "onCreateCommand": "sudo apt-get update && sudo apt-get install fontconfig pkg-config -y && cargo install --locked typst-cli && sudo mkdir -p /usr/share/fonts/custom && sudo cp fonts/* /usr/share/fonts/custom/ && sudo fc-cache -fv"
 }
