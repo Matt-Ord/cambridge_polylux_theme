@@ -1,5 +1,5 @@
 [package]
-name = "cambridge-polylux-theme"
+name = "unofficial-cambridge-polylux-theme"
 version = "0.0.1"
 entrypoint = "lib.typ"
 authors = ["Matthew Ord"]
@@ -9,3 +9,8 @@ categories = ["layout", "presentation"]
 disciplines = ["education"]
 exclude = ["fonts/*", ".devcontainer/*", ".zed/*", "example/*"]
 compiler = "0.14.0"
+
+[template]
+path = "example"
+entrypoint = "main.typ"
+thumbnail = "main.png"
