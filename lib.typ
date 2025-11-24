@@ -111,18 +111,20 @@
   set page(
     background: conclusionBackground,
     margin: (bottom: 2em, top: 4em, rest: 1.5em),
-    header: block(
-      inset: (left: -1.5em, right: -1.5em, rest: 0em),
-      box(
-        width: 60%,
-        height: 100%,
-        clip: true,
-        fill: none,
-        {
-          place(left + horizon, dx: 1cm, box(logo.get(), height: 1cm))
-        },
-      ),
-    ),
+    header: context {
+      block(
+        inset: (left: -1.5em, right: -1.5em, rest: 0em),
+        box(
+          width: 60%,
+          height: 100%,
+          clip: true,
+          fill: none,
+          {
+            place(left + horizon, dx: 1cm, box(logo.get(), height: 1cm))
+          },
+        ),
+      )
+    },
   )
 
   rawSlide(body)

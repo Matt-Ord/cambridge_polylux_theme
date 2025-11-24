@@ -1,5 +1,5 @@
 #import "@preview/polylux:0.4.0": toolbox
-#import "../lib.typ": camDarkBlue, camLightBlue, slide
+#import "@preview/unofficial-cambridge-polylux-theme": camDarkBlue, camLightBlue, logo, slide
 #import "@preview/mannot:0.3.1": *
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, edge, node
 
@@ -10,8 +10,7 @@
 )
 
 
-#let bra(expr) = [$#math.chevron.l expr|$]
-#let ket(expr) = [$|expr#math.chevron.r$]
+#logo.update(image("example-logo.svg"))
 
 
 
@@ -27,10 +26,11 @@
 #slide[
   = Outline
 
-  There are three types of slides in this presentation:
+  There are five types of slides in this presentation:
   - Standard slides with a dark blue background
   - Light slides with a light blue background
   - Title slides
+  - Two alternate slide styles
   These can be created using the `#slide` command with the appropriate type parameter.
 
 ]
@@ -56,5 +56,20 @@
     This is an example of a light slide with a light blue header.
   ])
   ```
+
+])
+
+#slide(type: "alt1", [
+  == Alternate Slide Example
+
+  This is an alternate slide style.
+
+])
+
+
+#slide(type: "alt2", [
+  == Another Alternate Slide Example
+
+  This is another alternate slide style.
 
 ])
