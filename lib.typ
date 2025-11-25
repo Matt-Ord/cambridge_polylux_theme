@@ -81,7 +81,7 @@
 }
 
 #let _alternative-slide-1(body) = {
-  let conclusionBackground = image("assets/alt_background_1.png", width: 100%, height: 100%, fit: "cover")
+  let conclusionBackground = image("assets/alt_background_1.pdf", width: 100%, height: 100%, fit: "cover")
 
   set page(
     background: conclusionBackground,
@@ -106,7 +106,7 @@
 }
 
 #let _alternative-slide-2(body) = {
-  let conclusionBackground = image("assets/alt_background_2.png", width: 100%, height: 100%, fit: "cover")
+  let conclusionBackground = image("assets/alt_background_2.pdf", width: 100%, height: 100%, fit: "cover")
 
   set page(
     background: conclusionBackground,
